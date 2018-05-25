@@ -58,4 +58,5 @@ WORKDIR /var/lib/jenkins
 EXPOSE 8080
 EXPOSE 8090
 # Run the Jenkins JNLP client
-ENTRYPOINT ["/usr/local/bin/run-jnlp-client"]
+# ENTRYPOINT ["/usr/local/bin/run-jnlp-client"]
+ENTRYPOINT ["/zap/zap-webswing.sh"]
